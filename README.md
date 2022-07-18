@@ -73,7 +73,7 @@ def screenshot(url, icao24):
     driver.quit()
  ```
 
-this is the tweeter part
+this is the twitter part
 ```
 pip install tweepy
 
