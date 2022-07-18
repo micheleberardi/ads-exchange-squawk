@@ -48,7 +48,11 @@ in case there is an event the script post a tweet on twitter
 
 ![Screenshot](images/tweet_squak.png)
 
-The script use selenium to make screenshot of the page 
+The script use selenium to make screenshot of the webpage https://globe.adsbexchange.com/?icao=ab6162
+
+```
+pip install selenium
+```
 
 ```
 def screenshot(url, icao24):
@@ -68,3 +72,23 @@ def screenshot(url, icao24):
     screenshot = driver.save_screenshot('/images/' + str(icao24) + '.png')
     driver.quit()
  ```
+
+this is the tweeter part
+```
+pip install tweepy
+
+```
+
+```
+def twitter(post):
+    # all the keys we need for our twitter bot
+    CONSUMER_KEY = '<CONSUMER_KEY>'
+    CONSUMER_SECRET = '<CONSUMER_SECRET>'
+    ACCESS_KEY = '<ACCESS_KEY>'
+    ACCESS_SECRET = '<ACCESS_SECRET>'
+    # talk to twitter
+    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+    auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+    api = tweepy.API(auth)
+    api.update_status(post)
+```
