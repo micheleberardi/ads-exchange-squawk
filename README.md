@@ -35,7 +35,7 @@ There are a handful of four-digit codes that every pilot should know. These are 
 7700 — Mayday or emergency
 
 # PYTHON SCRIPT
-The script today call adsbexchange API and check id there is any airplanes that squawking one of the following code
+The script today call [adsbexchange API](https://www.adsbexchange.com/) and check id there is any airplanes that squawking one of the following code
 
 - CODE 7700 = emergency
 - CODE 7600 = communicationfailure
