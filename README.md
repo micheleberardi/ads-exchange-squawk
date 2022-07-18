@@ -43,3 +43,4 @@ The script today call adsbexchange API and check id there is any airplanes that 
 
 in case there is an event the script post a tweet on tweeter 
 
+![Screenshot](images/tweet_squak.png)
