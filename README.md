@@ -44,6 +44,6 @@ The script today call [adsbexchange API](https://www.adsbexchange.com/) and chec
 - CODE 7600 = communicationfailure
 - CODE 7500 = hijacking
 
-in case there is an event the script post a tweet on tweeter 
+in case there is an event the script post a tweet on twitter 
 
 ![Screenshot](images/tweet_squak.png)
