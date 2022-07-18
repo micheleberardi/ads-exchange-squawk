@@ -1,3 +1,6 @@
+![Screenshot](images/sw.jpeg)
+
+
 # What is a Squawk in Aviation?
 
 What says “squawk” and flies in the sky? Is it a parrot, a Cessna, or a 787? Or all three? Squawk is a common term used in air traffic control to describe a specific type of radio signal that comes from the plane’s transponder. So this funny word is not just for the birds–pilots of all types of planes get to squawk, too.
