@@ -47,3 +47,24 @@ The script today call [adsbexchange API](https://www.adsbexchange.com/) and chec
 in case there is an event the script post a tweet on twitter 
 
 ![Screenshot](images/tweet_squak.png)
+
+The script use selenium to make screenshot of the page 
+
+```
+def screenshot(url, icao24):
+    options = Options()
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--headless')
+    options.headless = True
+    options.add_argument('window-size=800,800')
+    options.add_argument('ignore-certificate-errors')
+    # Plane images issue loading when in headless setting agent fixes.
+    options.add_argument(
+        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36")
+    driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", chrome_options=options)
+    # driver = webdriver.Chrome(DRIVER)
+    driver.get(url)
+    screenshot = driver.save_screenshot('/images/' + str(icao24) + '.png')
+    driver.quit()
+ ```
